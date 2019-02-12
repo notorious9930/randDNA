@@ -9,6 +9,15 @@ string randDNA(int seed, string bases, int n)
   string DNA; //string being returned by function
  
   uniform_int_distribution<> thing(0, bases.length);
+  
+  
+  for(int i=0; i<n; i++)
+  {
+	  DNA= DNA + bases[thing(ran)];
+  }
+  
+  return DNA;
+ }
 
   
   
